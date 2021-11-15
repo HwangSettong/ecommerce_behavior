@@ -122,7 +122,7 @@ from df
 group by user_session
 ```
 
-2) 1의 결과에서 event_list에 '%view%'가 존재하는 경우, (2) '%view%cart%'가 존재하는 경우, (3) '%view%cart%purchase'가 존재하는 경우를 각각 count함.
+2) 1의 결과에서 event_list에 '%view%'가 존재하는 경우, '%view%cart%'가 존재하는 경우, '%view%cart%purchase'가 존재하는 경우를 각각 count함.
 3) 2의 결과에서 각각의 count 수와 '%view%'가 존재하는 경우의 수를 기준으로 백분율 출력.  
 
 **완성된 sql**
