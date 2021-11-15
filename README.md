@@ -1,6 +1,6 @@
 # 개발환경
-spark v3.2.0 사용
-언어 : python (평소 python을 자주 사용하며, spark sql 문법으로 spark를 이용해 본 경험이 있기 때문에 Pyspark를 이용하여 sql 쿼리문을 실행하기 위해 선정)
+spark v3.2.0 사용  
+언어 : python (평소 python을 자주 사용하며, spark sql 문법으로 spark를 이용해 본 경험이 있기 때문에 Pyspark를 이용하여 sql 쿼리문을 실행하기 위해 선정)  
 
 
 # 요구사항
