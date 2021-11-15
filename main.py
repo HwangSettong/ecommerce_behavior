@@ -5,7 +5,7 @@ spark = SparkSession.builder \
     .getOrCreate()
 
 # csv 파일 로드
-data = spark.read.csv('/Users/settong/dev/ecommerce_behavior/2019-Nov.csv', header=True)
+data = spark.read.csv('2019-Nov.csv', header=True)
 data.createOrReplaceTempView("data")
 
 
@@ -31,8 +31,8 @@ print(result1)
 
 import datetime
 
-add_day = (result1+ datetime.timedelta(days=1))#.strftime("%Y-%m-%d")
-day = result1#.strftime("%Y-%m-%d")
+add_day = (result1+ datetime.timedelta(days=1)).strftime("%Y-%m-%d")
+day = result1.strftime("%Y-%m-%d")
 query = '''select *
            from (select to_timestamp(event_time) as kst_time, *
                  from data)
