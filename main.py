@@ -1,7 +1,7 @@
 from pyspark.sql import SparkSession
 spark = SparkSession.builder \
     .appName("ecommerce behavior") \
-    .config("spark.some.config.option", "some-value") \
+    .config('spark.sql.session.timeZone','Asia/Seoul') \
     .getOrCreate()
 
 # csv 파일 로드
